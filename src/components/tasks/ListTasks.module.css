@@ -1,0 +1,29 @@
+.ul {
+  list-style: none;
+  padding-inline: 1rem;
+  word-wrap: break-word;
+}
+
+.li {
+  border: 1px solid #ccc;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  overflow: hidden;
+  height: fit-content;
+  cursor: pointer;
+}
+.btnLow {
+  background-color: #f6be62;
+}
+
+.btnMiddle {
+  background-color: #fb8658;
+}
+
+.btnHigh {
+  background-color: #ff4d4d;
+}
+.hidden {
+  background: none;
+  box-shadow: none;
+}
