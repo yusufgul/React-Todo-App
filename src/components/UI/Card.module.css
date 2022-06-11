@@ -4,6 +4,14 @@
   border-radius: 10px;
   margin: 2rem auto;
   padding: 1rem;
-  width: 90%;
-  max-width: 40rem;
+}
+@media (min-width: 700px) {
+  .card {
+    width: 640px;
+  }
+}
+@media (max-width: 700px) {
+  .card {
+    width: 400px;
+  }
 }

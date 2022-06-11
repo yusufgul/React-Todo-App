@@ -2,8 +2,14 @@ import React, { useState } from "react";
 import AddTask from "./components/tasks/AddTask";
 import ListTasks from "./components/tasks/ListTasks";
 
+const info = {
+  task: "To delete a task, just click on it. Try it now.",
+  id: Math.random().toString().split(".")[1],
+  severity: ["btnLow"],
+};
+
 function App() {
-  const [taskList, setTaskList] = useState([]);
+  const [taskList, setTaskList] = useState([info]);
 
   const addTaskHandler = (newTask, newSeverity) => {
     setTaskList((prevTaskList) => {
