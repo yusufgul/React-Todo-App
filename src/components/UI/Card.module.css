@@ -5,7 +5,7 @@
   margin: 2rem auto;
   padding: 1rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 701px) {
   .card {
     width: 640px;
   }
@@ -13,5 +13,10 @@
 @media (max-width: 700px) {
   .card {
     width: 400px;
+  }
+}
+@media (max-width: 405px) {
+  .card {
+    width: 95%;
   }
 }

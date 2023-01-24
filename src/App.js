@@ -8,7 +8,7 @@ const info = {
   severity: ["btnLow"],
 };
 
-function App() {
+const App = () => {
   const [taskList, setTaskList] = useState([info]);
 
   const addTaskHandler = (newTask, newSeverity) => {
@@ -36,6 +36,6 @@ function App() {
       <ListTasks tasks={taskList} deleteTask={deleteTaskHandler} />
     </div>
   );
-}
+};
 
 export default App;

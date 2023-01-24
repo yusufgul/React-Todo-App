@@ -12,7 +12,7 @@ const ListTasks = (props) => {
           <li
             key={item.id}
             className={`${classes.li} ${classes[item.severity]}`}
-            onMouseDown={() => {
+            onClick={() => {
               props.deleteTask(item.id);
             }}
           >

@@ -6,10 +6,18 @@ import ErrorModal from "../UI/ErrorModal";
 
 const AddTask = (props) => {
   const [error, setError] = useState();
+  const [enteredTask, setEnteredTask] = useState("");
+  // state to hold the selected severity level
+  const [situation, setSituation] = useState({
+    btnLow: false,
+    btnMiddle: false,
+    btnHigh: false,
+  });
 
   const addTaskHandler = (event) => {
     event.preventDefault();
 
+    // Prevent empty input
     if (enteredTask.trim().length === 0) {
       setError({
         title: "Missing input",
@@ -18,6 +26,7 @@ const AddTask = (props) => {
       return;
     }
 
+    // Prevent empty severity
     if (Object.values(situation).every((value) => value === false)) {
       setError({
         title: "Missing severity level",
@@ -34,17 +43,9 @@ const AddTask = (props) => {
     setEnteredTask("");
   };
 
-  const [enteredTask, setEnteredTask] = useState("");
-
   const taskChangeHandler = (event) => {
     setEnteredTask(event.target.value);
   };
-
-  const [situation, setSituation] = useState({
-    btnLow: false,
-    btnMiddle: false,
-    btnHigh: false,
-  });
 
   const pressHandler = (btnLow, btnMiddle, btnHigh) => {
     setSituation({
