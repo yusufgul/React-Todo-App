@@ -1,2 +1,5 @@
 # React-Todo-App
-https://ysf-react-todo.herokuapp.com
+Simple todo app made with using React.
+
+## Demo
+https://todo-da294.web.app/
